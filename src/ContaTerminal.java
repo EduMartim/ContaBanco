@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class ContaTerminal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        scanner.useLocale(new Locale("pt", "BR")); // Configura o Scanner para o locale do Brasil
+        Scanner useLocale;// Configura o Scanner para o locale do Brasil
+        useLocale = scanner.useLocale(new Locale("pt", "BR"));
 
         System.out.println("Por favor, digite o número da conta:");
         int numero = scanner.nextInt();
